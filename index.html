@@ -7,9 +7,13 @@
   <link href="/src/bootstrap/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <script src="/src/bootstrap/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="main.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js" integrity="sha512-zKaK6G2LZC5YZTX0vKmD7xOwd1zrEEMal4zlTf5Ved/A1RrnW+qt8pWDfo7oz+xeChECS/P9dv6EDwwPwelFfQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js" integrity="sha512-jq8sZI0I9Og0nnZ+CfJRnUzNSDKxr/5Bvha5bn7AHzTnRyxUfpUArMzfH++mwE/hb2efOo1gCAgI+1RMzf8F7g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <title>Paul Matshona | Home</title>
 </head>
 <body>
+    <canvas class= "background"></canvas>
   <div class="container">
     <div class="row">
         <div class="col-md-6">
@@ -21,11 +25,61 @@
                 <h1>
                     We’ll be back soon!</h1>
                 <div>
-                    <p>
-                        Sorry for the inconvenience but we’re performing some maintenance at the moment.
-                        we’ll be back online shortly!</p>
+                    <p id="element"></p>
                 </div>
+                <script>
+                    var typed = new Typed('#element', {
+                      strings: ['The website is being upgraded at the moment', 
+                      'Sorry for the inconvenience but we’re performing some maintenance at the moment, we’ll be back online shortly!'],
+                      typeSpeed: 50,
+                    });
+                  </script>
             </div>
         </div>
+        <script>
+            window.onload = function() { Particles.init({ selector: '.background',  maxParticles: 
+450
+,
+  
+// options for breakpoints
+  responsive: [
+    {
+      breakpoint: 
+768
+,
+      options: {
+        maxParticles: 
+200
+,
+        color: 
+'#FFF'
+,
+        connectParticles: 
+false
+      }
+    }, {
+      breakpoint: 
+425
+,
+      options: {
+        maxParticles: 
+100
+,
+        connectParticles: 
+true
+      }
+    }, {
+      breakpoint: 
+320
+,
+      options: {
+        maxParticles: 
+0
+ 
+// disables particles.js
+      }
+    }
+  ]});};
+        </script>
 </body>
 </html>
