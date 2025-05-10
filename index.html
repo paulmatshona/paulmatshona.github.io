@@ -1,33 +1,1119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/src/bootstrap/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <script src="/src/bootstrap/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="main.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js" integrity="sha512-zKaK6G2LZC5YZTX0vKmD7xOwd1zrEEMal4zlTf5Ved/A1RrnW+qt8pWDfo7oz+xeChECS/P9dv6EDwwPwelFfQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js" integrity="sha512-jq8sZI0I9Og0nnZ+CfJRnUzNSDKxr/5Bvha5bn7AHzTnRyxUfpUArMzfH++mwE/hb2efOo1gCAgI+1RMzf8F7g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <title>Paul Matshona | Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul Matshona | Mining Engineer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        .highlight-text {
+            background: linear-gradient(to right, #007bff, #0056b3);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 700;
+        }
+        .blog-card {
+            transition: transform 0.3s ease;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+        .course-badge {
+            font-size: 0.85rem;
+            padding: 0.5rem 1rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+        .academic-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+    </style>
 </head>
-<body>
-    <canvas class= "background"></canvas>
-  <div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <div class="error-template">
-                <h1>
-                    :) Oops!</h1>
-                <h2>
-                    Temporarily down for maintenance</h2>
-                <h1>
-                    We’ll be back soon!</h1>
-                <div>
-                    <p id="element"></p>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Paul Matshona</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#academic">Academic</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#expertise">Expertise</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#artisanal-mining">Artisanal Mining</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="bg-dark text-white py-5 mt-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Paul Matshona</h1>
+                    <h2 class="h3 mb-4"><span class="highlight-text">Mining Engineer</span></h2>
+                    <p class="lead mb-4">Transforming mining operations through innovative systems development and optimization strategies that enhance efficiency, safety, and sustainability.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#contact" class="btn btn-primary btn-lg">Get In Touch</a>
+                        <a href="#projects" class="btn btn-outline-light btn-lg">View Projects</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center mt-5 mt-lg-0">
+                    <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Paul Matshona" class="img-fluid rounded-circle border border-5 border-secondary" style="max-width: 350px; object-fit: cover; height: 350px;">
                 </div>
             </div>
         </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">About Me</h2>
+                    <hr class="w-25 mx-auto">
+                </div>
+                <div class="col-md-6">
+                    <h3 class="mb-4">Professional Background</h3>
+                    <p class="lead">I am a dedicated Mining Engineer with extensive experience in developing and optimizing mining systems to improve operational efficiency and safety.</p>
+                    <p>With a strong foundation in mining engineering principles and a passion for technological innovation, I specialize in creating solutions that address the complex challenges faced by modern mining operations.</p>
+                    <p>Currently serving as a Research and Innovation Officer at Zimbabwe School of Mines, I combine academic expertise with practical field experience to deliver measurable improvements in productivity, cost reduction, and environmental sustainability.</p>
+                </div>
+                <div class="col-md-6 mt-4 mt-md-0">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4">Core Values</h3>
+                            <div class="d-flex mb-3">
+                                <div class="me-3">
+                                    <i class="bi bi-shield-check text-primary fs-3"></i>
+                                </div>
+                                <div>
+                                    <h4 class="h5">Safety First</h4>
+                                    <p>Prioritizing the well-being of mining personnel through robust system design and risk mitigation.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="me-3">
+                                    <i class="bi bi-graph-up-arrow text-primary fs-3"></i>
+                                </div>
+                                <div>
+                                    <h4 class="h5">Continuous Improvement</h4>
+                                    <p>Constantly seeking ways to enhance mining processes and systems for better outcomes.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="me-3">
+                                    <i class="bi bi-lightbulb text-primary fs-3"></i>
+                                </div>
+                                <div>
+                                    <h4 class="h5">Innovation</h4>
+                                    <p>Embracing new technologies and methodologies to solve complex mining challenges.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="bi bi-tree text-primary fs-3"></i>
+                                </div>
+                                <div>
+                                    <h4 class="h5">Sustainability</h4>
+                                    <p>Developing systems that minimize environmental impact while maximizing resource utilization.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Role Section -->
+    <section id="academic" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Academic Role</h2>
+                    <hr class="w-25 mx-auto">
+                    <p class="lead">Zimbabwe School of Mines (2022 - Present)</p>
+                </div>
+            </div>
+            
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                    <img src="https://images.unsplash.com/photo-1568792923760-d70635a89fdc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Research and Innovation" class="img-fluid rounded shadow-sm">
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="card border-0 bg-white shadow-sm">
+                        <div class="card-body p-4">
+                            <h3 class="card-title mb-4">Research and Innovation Officer</h3>
+                            <p class="lead">Leading research initiatives and innovation projects to advance mining education and industry practices.</p>
+                            <p>As the Research and Innovation Officer at Zimbabwe School of Mines since 2022, I spearhead efforts to develop cutting-edge solutions for the mining industry while fostering a culture of innovation among students and faculty.</p>
+                            <ul class="list-group list-group-flush mt-4">
+                                <li class="list-group-item bg-transparent px-0">
+                                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                    Developing research programs focused on sustainable mining practices
+                                </li>
+                                <li class="list-group-item bg-transparent px-0">
+                                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                    Establishing industry partnerships to bridge academic research with practical applications
+                                </li>
+                                <li class="list-group-item bg-transparent px-0">
+                                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                    Securing funding for innovative mining technology projects
+                                </li>
+                                <li class="list-group-item bg-transparent px-0">
+                                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                    Publishing research findings in academic journals and industry publications
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-12 text-center mb-5">
+                    <h3 class="h2">Lecturer</h3>
+                    <p class="lead">Sharing knowledge and expertise with the next generation of mining professionals</p>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 shadow-sm h-100 text-center">
+                        <div class="card-body p-4">
+                            <i class="bi bi-bricks academic-icon text-primary"></i>
+                            <span class="course-badge bg-primary text-white rounded-pill">Core Course</span>
+                            <h4 class="card-title">Rock Mechanics & Ground Control</h4>
+                            <p>Teaching advanced concepts in rock mechanics, ground support systems, and stability analysis for underground and surface mining operations.</p>
+                            <hr>
+                            <p class="mb-0"><strong>Key Topics:</strong></p>
+                            <ul class="list-unstyled mt-2">
+                                <li>Stress analysis and rock mass classification</li>
+                                <li>Support system design and implementation</li>
+                                <li>Slope stability and ground movement monitoring</li>
+                                <li>Numerical modeling for ground control</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 shadow-sm h-100 text-center">
+                        <div class="card-body p-4">
+                            <i class="bi bi-truck academic-icon text-primary"></i>
+                            <span class="course-badge bg-primary text-white rounded-pill">Core Course</span>
+                            <h4 class="card-title">Mine Transportation & Winding</h4>
+                            <p>Instructing students on the principles and practices of material handling, transportation systems, and winding operations in mining environments.</p>
+                            <hr>
+                            <p class="mb-0"><strong>Key Topics:</strong></p>
+                            <ul class="list-unstyled mt-2">
+                                <li>Haulage system design and optimization</li>
+                                <li>Shaft winding mechanics and safety systems</li>
+                                <li>Conveyor systems and material flow analysis</li>
+                                <li>Transportation fleet management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 shadow-sm h-100 text-center">
+                        <div class="card-body p-4">
+                            <i class="bi bi-water academic-icon text-primary"></i>
+                            <span class="course-badge bg-primary text-white rounded-pill">Core Course</span>
+                            <h4 class="card-title">Mine Hydrology</h4>
+                            <p>Educating future mining engineers on water management, drainage systems, and hydrological considerations in mining operations.</p>
+                            <hr>
+                            <p class="mb-0"><strong>Key Topics:</strong></p>
+                            <ul class="list-unstyled mt-2">
+                                <li>Groundwater flow and aquifer analysis</li>
+                                <li>Dewatering system design and implementation</li>
+                                <li>Water quality management and treatment</li>
+                                <li>Flood prevention and emergency response</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-lg-10 mx-auto">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="row align-items-center">
+                                <div class="col-md-4 mb-3 mb-md-0">
+                                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Teaching" class="img-fluid rounded">
+                                </div>
+                                <div class="col-md-8">
+                                    <h4>Teaching Philosophy</h4>
+                                    <p>My approach to teaching combines theoretical knowledge with practical applications, ensuring students develop both the technical expertise and critical thinking skills needed in the mining industry.</p>
+                                    <p>I believe in creating an interactive learning environment where students engage with real-world mining challenges, participate in field studies, and collaborate on innovative solutions that address industry needs.</p>
+                                    <a href="#contact" class="btn btn-outline-primary">Discuss Academic Collaboration</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Technical Expertise</h2>
+                    <hr class="w-25 mx-auto">
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-gear-wide-connected text-primary fs-1 mb-3"></i>
+                            <h3 class="h4 mb-3">Mining Systems Design</h3>
+                            <p>Designing comprehensive mining systems that integrate equipment, personnel, and processes for optimal performance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-speedometer2 text-primary fs-1 mb-3"></i>
+                            <h3 class="h4 mb-3">Operational Optimization</h3>
+                            <p>Analyzing and improving mining operations to enhance productivity, reduce costs, and minimize downtime.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-bar-chart-line text-primary fs-1 mb-3"></i>
+                            <h3 class="h4 mb-3">Production Planning</h3>
+                            <p>Developing strategic production plans that maximize resource extraction while maintaining operational efficiency.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-robot text-primary fs-1 mb-3"></i>
+                            <h3 class="h4 mb-3">Automation Integration</h3>
+                            <p>Implementing automated systems and technologies to improve safety and efficiency in mining operations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-clipboard-data text-primary fs-1 mb-3"></i>
+                            <h3 class="h4 mb-3">Data Analysis</h3>
+                            <p>Utilizing data-driven approaches to identify trends, optimize processes, and make informed decisions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-people text-primary fs-1 mb-3"></i>
+                            <h3 class="h4 mb-3">Team Leadership</h3>
+                            <p>Leading cross-functional teams to implement system improvements and achieve operational goals.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-12 text-center mb-4">
+                    <h3 class="h3">Technical Skills</h3>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="fw-bold">Mine Planning Software</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="fw-bold">Process Optimization</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="fw-bold">Equipment Selection</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="fw-bold">Ventilation System Design</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="fw-bold">Geotechnical Analysis</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="fw-bold">Environmental Management</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artisanal Mining Section -->
+    <section id="artisanal-mining" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Artisanal & Small Scale Mining</h2>
+                    <hr class="w-25 mx-auto">
+                    <p class="lead">My passion for developing sustainable solutions for artisanal and small-scale mining communities</p>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://images.unsplash.com/photo-1605130284535-11dd9eedc58a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Artisanal Mining Development" class="img-fluid rounded shadow-sm">
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Empowering Artisanal Miners</h3>
+                    <p>I am deeply passionate about developing sustainable solutions for artisanal and small-scale mining (ASM) communities. My work focuses on bridging the gap between traditional mining practices and modern, efficient, and environmentally responsible techniques.</p>
+                    <p>Through collaborative approaches, I help ASM operations improve their:</p>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item bg-transparent px-0">
+                            <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                            Safety standards and risk management
+                        </li>
+                        <li class="list-group-item bg-transparent px-0">
+                            <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                            Resource recovery and processing efficiency
+                        </li>
+                        <li class="list-group-item bg-transparent px-0">
+                            <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                            Environmental impact mitigation
+                        </li>
+                        <li class="list-group-item bg-transparent px-0">
+                            <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                            Access to markets and fair trade opportunities
+                        </li>
+                        <li class="list-group-item bg-transparent px-0">
+                            <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                            Formalization and compliance with regulations
+                        </li>
+                    </ul>
+                    <p>By combining technical expertise with community engagement, I strive to create sustainable pathways for artisanal miners to improve their livelihoods while minimizing environmental and social impacts.</p>
+                    <a href="#projects" class="btn btn-primary">View ASM Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Professional Experience</h2>
+                    <hr class="w-25 mx-auto">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <div class="d-flex flex-column flex-md-row justify-content-between">
+                                <div>
+                                    <h3 class="h4">Research and Innovation Officer</h3>
+                                    <p class="text-muted mb-1">Zimbabwe School of Mines</p>
+                                </div>
+                                <div class="text-md-end">
+                                    <span class="badge bg-primary mb-2">2022 - Present</span>
+                                </div>
+                            </div>
+                            <p class="mt-3">Leading research initiatives and innovation projects to advance mining education and industry practices. Developing cutting-edge solutions for the mining industry while fostering a culture of innovation among students and faculty.</p>
+                            <ul class="mt-3">
+                                <li>Spearheaded research programs focused on sustainable mining practices</li>
+                                <li>Established industry partnerships to bridge academic research with practical applications</li>
+                                <li>Secured funding for innovative mining technology projects</li>
+                                <li>Published research findings in academic journals and industry publications</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <div class="d-flex flex-column flex-md-row justify-content-between">
+                                <div>
+                                    <h3 class="h4">Senior Mining Systems Engineer</h3>
+                                    <p class="text-muted mb-1">Global Mining Solutions Ltd.</p>
+                                </div>
+                                <div class="text-md-end">
+                                    <span class="badge bg-primary mb-2">2019 - 2022</span>
+                                </div>
+                            </div>
+                            <p class="mt-3">Led the development and implementation of advanced mining systems that increased operational efficiency by 25% across multiple sites. Designed optimization strategies that reduced equipment downtime by 30% and improved resource recovery rates.</p>
+                            <ul class="mt-3">
+                                <li>Spearheaded the integration of IoT sensors for real-time equipment monitoring</li>
+                                <li>Developed custom algorithms for optimizing haul truck routes, reducing fuel consumption by 15%</li>
+                                <li>Implemented predictive maintenance systems that decreased unplanned downtime by 40%</li>
+                                <li>Led cross-functional teams in the successful deployment of new mining technologies</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <div class="d-flex flex-column flex-md-row justify-content-between">
+                                <div>
+                                    <h3 class="h4">Mining Operations Specialist</h3>
+                                    <p class="text-muted mb-1">Mineral Extraction Technologies</p>
+                                </div>
+                                <div class="text-md-end">
+                                    <span class="badge bg-primary mb-2">2015 - 2019</span>
+                                </div>
+                            </div>
+                            <p class="mt-3">Optimized underground mining operations through process improvements and system redesigns. Collaborated with site management to implement efficiency initiatives that resulted in a 20% increase in production output.</p>
+                            <ul class="mt-3">
+                                <li>Redesigned ventilation systems to improve air quality and reduce energy consumption</li>
+                                <li>Developed and implemented standard operating procedures for equipment utilization</li>
+                                <li>Conducted time-motion studies to identify and eliminate operational bottlenecks</li>
+                                <li>Trained operations teams on best practices for system optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex flex-column flex-md-row justify-content-between">
+                                <div>
+                                    <h3 class="h4">Junior Mining Engineer</h3>
+                                    <p class="text-muted mb-1">Consolidated Mining Corporation</p>
+                                </div>
+                                <div class="text-md-end">
+                                    <span class="badge bg-primary mb-2">2012 - 2015</span>
+                                </div>
+                            </div>
+                            <p class="mt-3">Assisted in the planning and execution of mining operations, focusing on system efficiency and safety improvements. Participated in the implementation of new technologies to enhance operational performance.</p>
+                            <ul class="mt-3">
+                                <li>Contributed to mine planning and scheduling activities</li>
+                                <li>Assisted in equipment selection and fleet management optimization</li>
+                                <li>Conducted site inspections and prepared technical reports</li>
+                                <li>Collaborated with geology teams to optimize extraction sequences</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Key Projects</h2>
+                    <hr class="w-25 mx-auto">
+                    <p class="lead">Showcasing innovative solutions in mining systems development and optimization</p>
+                </div>
+            </div>
+            
+            <!-- Project Categories -->
+            <ul class="nav nav-pills justify-content-center mb-5" id="projectTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="all-tab" data-bs-toggle="pill" data-bs-target="#all-projects" type="button" role="tab">All Projects</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="artisanal-tab" data-bs-toggle="pill" data-bs-target="#artisanal-projects" type="button" role="tab">Artisanal Mining</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="optimization-tab" data-bs-toggle="pill" data-bs-target="#optimization-projects" type="button" role="tab">Optimization</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="systems-tab" data-bs-toggle="pill" data-bs-target="#systems-projects" type="button" role="tab">Systems Design</button>
+                </li>
+            </ul>
+            
+            <!-- Project Content -->
+            <div class="tab-content" id="projectTabContent">
+                <!-- All Projects -->
+                <div class="tab-pane fade show active" id="all-projects" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-0 shadow-sm h-100">
+                                <img src="https://images.unsplash.com/photo-1579547945413-497e1b99dac0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Automated Haulage System">
+                                <div class="card-body">
+                                    <h3 class="h5 card-title">Automated Haulage System Implementation</h3>
+                                    <p class="card-text">Designed and implemented an automated haulage system for an open-pit copper mine, resulting in a 35% increase in material movement efficiency and significant safety improvements.</p>
+                                    <div class="d-flex flex-wrap gap-2 mt-3">
+                                        <span class="badge bg-secondary">Automation</span>
+                                        <span class="badge bg-secondary">Fleet Management</span>
+                                        <span class="badge bg-secondary">Safety Systems</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-0 shadow-sm h-100">
+                                <img src="https://images.unsplash.com/photo-1518310952931-b1de897abd5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Artisanal Mining Support">
+                                <div class="card-body">
+                                    <h3 class="h5 card-title">Artisanal Mining Community Support Program</h3>
+                                    <p class="card-text">Developed and implemented a comprehensive support program for artisanal gold miners, improving safety practices, recovery rates, and environmental management.</p>
+                                    <div class="d-flex flex-wrap gap-2 mt-3">
+                                        <span class="badge bg-secondary">Artisanal Mining</span>
+                                        <span class="badge bg-secondary">Community Development</span>
+                                        <span class="badge bg-secondary">Sustainability</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-0 shadow-sm h-100">
+                                <img src="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Ventilation Optimization">
+                                <div class="card-body">
+                                    <h3 class="h5 card-title">Underground Ventilation Optimization</h3>
+                                    <p class="card-text">Redesigned the ventilation system for a deep underground gold mine, reducing energy consumption by 28% while improving air quality and working conditions for miners.</p>
+                                    <div class="d-flex flex-wrap gap-2 mt-3">
+                                        <span class="badge bg-secondary">Ventilation</span>
+                                        <span class="badge bg-secondary">Energy Efficiency</span>
+                                        <span class="badge bg-secondary">Worker Safety</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-0 shadow-sm h-100">
+                                <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Predictive Maintenance">
+                                <div class="card-body">
+                                    <h3 class="h5 card-title">Predictive Maintenance System Development</h3>
+                                    <p class="card-text">Developed and deployed a predictive maintenance system using IoT sensors and machine learning algorithms, reducing equipment downtime by 42% and maintenance costs by 30%.</p>
+                                    <div class="d-flex flex-wrap gap-2 mt-3">
+                                        <span class="badge bg-secondary">IoT</span>
+                                        <span class="badge bg-secondary">Machine Learning</span>
+                                        <span class="badge bg-secondary">Maintenance</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-0 shadow-sm h-100">
+                                <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Small Scale Mining Technology">
+                                <div class="card-body">
+                                    <h3 class="h5 card-title">Small-Scale Mining Technology Transfer</h3>
+                                    <p class="card-text">Led a technology transfer initiative for small-scale miners, introducing appropriate technologies that improved recovery rates by 40% while reducing mercury use in gold processing.</p>
+                                    <div class="d-flex flex-wrap gap-2 mt-3">
+                                        <span class="badge bg-secondary">Small-Scale Mining</span>
+                                        <span class="badge bg-secondary">Technology Transfer</span>
+                                        <span class="badge bg-secondary">Environmental Protection</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-0 shadow-sm h-100">
+                                <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Digital Twin">
+                                <div class="card-body">
+                                    <h3 class="h5 card-title">Digital Twin Implementation</h3>
+                                    <p class="card-text">Created a digital twin of an operating gold mine, enabling real-time monitoring, scenario planning, and optimization that increased overall mine productivity by 18%.</p>
+                                    <div class="d-flex flex-wrap gap-2 mt-3">
+                                        <span class="badge bg-secondary">Digital Twin</span>
+                                        <span class="badge bg-secondary">Simulation</span>
+                                        <span class="badge bg-secondary">Data Analytics</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Artisanal Mining Projects -->
+                <div class="tab-pane fade" id="artisanal-projects" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-0 shadow-sm h-100">
+                                <img src="https://images.unsplash.com/photo-1518310952931-b1de897abd5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Artisanal Mining Support">
+                                <div class="card-body">
+                                    <h3 class="h5 card-title">Artisanal Mining Community Support Program</h3>
+                                    <p class="card-text">Developed and implemented a comprehensive support program for artisanal gold miners, improving safety practices, recovery rates, and environmental management.</p>
+                                    <div class="d-flex flex-wrap gap-2 mt-3">
+                                        <span class="badge bg-secondary">Artisanal Mining</span>
+                                        <span class="badge bg-secondary">Community Development</span>
+                                        <span class="badge bg-secondary">Sustainability</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-0 shadow-sm h-100">
+                                <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Small Scale Mining Technology">
+                                <div class="card-body">
+                                    <h3 class="h5 card-title">Small-Scale Mining Technology Transfer</h3>
+                                    <p class="card-text">Led a technology transfer initiative for small-scale miners, introducing appropriate technologies that improved recovery rates by 40% while reducing mercury use in gold processing.</p>
+                                    <div class="d-flex flex-wrap gap-2 mt-3">
+                                        <span class="badge bg-secondary">Small-Scale Mining</span>
+                                        <span class="badge bg-secondary">Technology Transfer</span>
+                                        <span class="badge bg-secondary">Environmental Protection</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-0 shadow-sm h-100">
+                                <img src="https://images.unsplash.com/photo-1605130284535-11dd9eedc58a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="ASM Formalization">
+                                <div class="card-body">
+                                    <h3 class="h5 card-title">ASM Formalization Initiative</h3>
+                                    <p class="card-text">Developed a framework for formalizing artisanal mining operations, helping miners gain legal status, access to markets, and improved working conditions.</p>
+                                    <div class="d-flex flex-wrap gap-2 mt-3">
+                                        <span class="badge bg-secondary">Formalization</span>
+                                        <span class="badge bg-secondary">Policy Development</span>
+                                        <span class="badge bg-secondary">Stakeholder Engagement</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Optimization Projects -->
+                <div class="tab-pane fade" id="optimization-projects" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-0 shadow-sm h-100">
+                                <img src="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Ventilation Optimization">
+                                <div class="card-body">
+                                    <h3 class="h5 card-title">Underground Ventilation Optimization</h3>
+                                    <p class="card-text">Redesigned the ventilation system for a deep underground gold mine, reducing energy consumption by 28% while improving air quality and working conditions for miners.</p>
+                                    <div class="d-flex flex-wrap gap-2 mt-3">
+                                        <span class="badge bg-secondary">Ventilation</span>
+                                        <span class="badge bg-secondary">Energy Efficiency</span>
+                                        <span class="badge bg-secondary">Worker Safety</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-0 shadow-sm h-100">
+                                <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Predictive Maintenance">
+                                <div class="card-body">
+                                    <h3 class="h5 card-title">Predictive Maintenance System Development</h3>
+                                    <p class="card-text">Developed and deployed a predictive maintenance system using IoT sensors and machine learning algorithms, reducing equipment downtime by 42% and maintenance costs by 30%.</p>
+                                    <div class="d-flex flex-wrap gap-2 mt-3">
+                                        <span class="badge bg-secondary">IoT</span>
+                                        <span class="badge bg-secondary">Machine Learning</span>
+                                        <span class="badge bg-secondary">Maintenance</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-0 shadow-sm h-100">
+                                <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Process Optimization">
+                                <div class="card-body">
+                                    <h3 class="h5 card-title">Mineral Processing Optimization</h3>
+                                    <p class="card-text">Optimized a gold processing plant, increasing recovery rates by 15% and reducing reagent consumption by 20% through process modifications and control system improvements.</p>
+                                    <div class="d-flex flex-wrap gap-2 mt-3">
+                                        <span class="badge bg-secondary">Process Engineering</span>
+                                        <span class="badge bg-secondary">Metallurgy</span>
+                                        <span class="badge bg-secondary">Efficiency</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Systems Design Projects -->
+                <div class="tab-pane fade" id="systems-projects" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-0 shadow-sm h-100">
+                                <img src="https://images.unsplash.com/photo-1579547945413-497e1b99dac0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Automated Haulage System">
+                                <div class="card-body">
+                                    <h3 class="h5 card-title">Automated Haulage System Implementation</h3>
+                                    <p class="card-text">Designed and implemented an automated haulage system for an open-pit copper mine, resulting in a 35% increase in material movement efficiency and significant safety improvements.</p>
+                                    <div class="d-flex flex-wrap gap-2 mt-3">
+                                        <span class="badge bg-secondary">Automation</span>
+                                        <span class="badge bg-secondary">Fleet Management</span>
+                                        <span class="badge bg-secondary">Safety Systems</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-0 shadow-sm h-100">
+                                <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Digital Twin">
+                                <div class="card-body">
+                                    <h3 class="h5 card-title">Digital Twin Implementation</h3>
+                                    <p class="card-text">Created a digital twin of an operating gold mine, enabling real-time monitoring, scenario planning, and optimization that increased overall mine productivity by 18%.</p>
+                                    <div class="d-flex flex-wrap gap-2 mt-3">
+                                        <span class="badge bg-secondary">Digital Twin</span>
+                                        <span class="badge bg-secondary">Simulation</span>
+                                        <span class="badge bg-secondary">Data Analytics</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-0 shadow-sm h-100">
+                                <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Integrated Mine Management">
+                                <div class="card-body">
+                                    <h3 class="h5 card-title">Integrated Mine Management System</h3>
+                                    <p class="card-text">Designed and implemented a comprehensive mine management system integrating planning, operations, maintenance, and reporting functions into a unified platform.</p>
+                                    <div class="d-flex flex-wrap gap-2 mt-3">
+                                        <span class="badge bg-secondary">Systems Integration</span>
+                                        <span class="badge bg-secondary">Management</span>
+                                        <span class="badge bg-secondary">Data Systems</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Add Project Button -->
+            <div class="text-center mt-5">
+                <a href="#contact" class="btn btn-outline-primary btn-lg">Discuss Your Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Mining Insights Blog</h2>
+                    <hr class="w-25 mx-auto">
+                    <p class="lead">Sharing knowledge, experiences, and stories from the mining industry</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100 blog-card">
+                        <img src="https://images.unsplash.com/photo-1605130284535-11dd9eedc58a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Blog Post 1">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="badge bg-primary">Artisanal Mining</span>
+                                <small class="text-muted">May 15, 2023</small>
+                            </div>
+                            <h3 class="h5 card-title">Transforming Artisanal Mining: A Path to Sustainability</h3>
+                            <p class="card-text">Exploring sustainable approaches to artisanal mining that balance economic needs with environmental protection and social responsibility.</p>
+                            <a href="#" class="btn btn-outline-primary mt-2">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100 blog-card">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Blog Post 2">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="badge bg-primary">Technology</span>
+                                <small class="text-muted">April 3, 2023</small>
+                            </div>
+                            <h3 class="h5 card-title">The Future of Mining: Automation and AI</h3>
+                            <p class="card-text">How artificial intelligence and automation are revolutionizing the mining industry, from exploration to processing and beyond.</p>
+                            <a href="#" class="btn btn-outline-primary mt-2">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100 blog-card">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Blog Post 3">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="badge bg-primary">Case Study</span>
+                                <small class="text-muted">March 12, 2023</small>
+                            </div>
+                            <h3 class="h5 card-title">Community-Led Mining Development: Success Stories</h3>
+                            <p class="card-text">Case studies of successful community-led mining initiatives that have created sustainable economic opportunities while protecting local environments.</p>
+                            <a href="#" class="btn btn-outline-primary mt-2">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- More Blog Posts Button -->
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-outline-primary btn-lg">View All Posts</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Education & Certifications</h2>
+                    <hr class="w-25 mx-auto">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="h4 mb-4">Academic Background</h3>
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <div class="d-flex flex-column flex-md-row justify-content-between">
+                                <div>
+                                    <h4 class="h5">Master of Science in Mining Engineering</h4>
+                                    <p class="text-muted mb-1">University of Mining Technology</p>
+                                </div>
+                                <div class="text-md-end">
+                                    <span class="badge bg-primary mb-2">2010 - 2012</span>
+                                </div>
+                            </div>
+                            <p class="mt-3">Specialized in Advanced Mining Systems and Optimization. Thesis: "Optimization of Underground Mining Operations Through Integrated Systems Approach"</p>
+                        </div>
+                    </div>
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex flex-column flex-md-row justify-content-between">
+                                <div>
+                                    <h4 class="h5">Bachelor of Engineering in Mining</h4>
+                                    <p class="text-muted mb-1">National Institute of Mining Sciences</p>
+                                </div>
+                                <div class="text-md-end">
+                                    <span class="badge bg-primary mb-2">2006 - 2010</span>
+                                </div>
+                            </div>
+                            <p class="mt-3">Graduated with honors. Focused on mining operations, equipment, and systems design. Senior project: "Efficiency Analysis of Haulage Systems in Open-Pit Mining"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <h3 class="h4 mb-4">Professional Certifications</h3>
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item px-0 py-3 border-bottom">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-award-fill text-primary fs-4 me-3"></i>
+                                        <div>
+                                            <h4 class="h6 mb-1">Certified Mining Systems Professional (CMSP)</h4>
+                                            <p class="text-muted mb-0">International Mining Systems Association</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item px-0 py-3 border-bottom">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-award-fill text-primary fs-4 me-3"></i>
+                                        <div>
+                                            <h4 class="h6 mb-1">Professional Engineer (PE) - Mining Specialty</h4>
+                                            <p class="text-muted mb-0">National Board of Professional Engineering</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item px-0 py-3 border-bottom">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-award-fill text-primary fs-4 me-3"></i>
+                                        <div>
+                                            <h4 class="h6 mb-1">Advanced Mine Safety and Health Certification</h4>
+                                            <p class="text-muted mb-0">Mine Safety and Health Administration</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item px-0 py-3 border-bottom">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-award-fill text-primary fs-4 me-3"></i>
+                                        <div>
+                                            <h4 class="h6 mb-1">Certified Mine Optimization Specialist</h4>
+                                            <p class="text-muted mb-0">Global Mining Technology Institute</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item px-0 py-3">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-award-fill text-primary fs-4 me-3"></i>
+                                        <div>
+                                            <h4 class="h6 mb-1">Project Management Professional (PMP)</h4>
+                                            <p class="text-muted mb-0">Project Management Institute</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Get In Touch</h2>
+                    <hr class="w-25 mx-auto">
+                    <p class="lead">Interested in discussing mining systems development or optimization? Let's connect!</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="name" class="form-label">Your Name</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="subject" class="form-label">Subject</label>
+                                        <input type="text" class="form-control" id="subject" placeholder="Enter subject">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <button type="submit" class="btn btn-primary btn-lg px-5">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-4 text-center mb-4 mb-md-0">
+                    <div class="d-inline-block p-3 bg-white rounded-circle shadow-sm mb-3">
+                        <i class="bi bi-envelope text-primary fs-2"></i>
+                    </div>
+                    <h3 class="h5">Email</h3>
+                    <p>paul.matshona@example.com</p>
+                </div>
+                <div class="col-md-4 text-center mb-4 mb-md-0">
+                    <div class="d-inline-block p-3 bg-white rounded-circle shadow-sm mb-3">
+                        <i class="bi bi-telephone text-primary fs-2"></i>
+                    </div>
+                    <h3 class="h5">Phone</h3>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="d-inline-block p-3 bg-white rounded-circle shadow-sm mb-3">
+                        <i class="bi bi-geo-alt text-primary fs-2"></i>
+                    </div>
+                    <h3 class="h5">Location</h3>
+                    <p>Zimbabwe School of Mines, Bulawayo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <h4 class="h5 mb-3">Paul Matshona</h4>
+                    <p class="mb-0">Mining Engineer | Research and Innovation Officer | Lecturer</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="d-flex justify-content-center justify-content-md-end gap-3">
+                        <a href="#" class="text-white fs-4"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-github"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-envelope-fill"></i></a>
+                    </div>
+                    <p class="mt-3 mb-0">&copy; 2023 Paul Matshona. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Smooth scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    const navbarHeight = document.querySelector('.navbar').offsetHeight;
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Update URL hash without jumping
+                    history.pushState(null, null, targetId);
+                }
+            });
+        });
+    </script>
 </body>
 </html>
